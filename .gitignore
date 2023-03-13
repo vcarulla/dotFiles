@@ -102,3 +102,5 @@ zsdoc/data
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,zsh,vim
 
 .zsh/.zsh_sessions/
+
+nvim/plugin/packer_compiled.lua
