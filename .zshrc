@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/imbittor/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
   if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
   else
-    export EDITOR='nvim -u ~/dotFiles/.nvim/lua/init.lua'
+    export EDITOR='nvim -u $HOME/dotFiles/.nvim/lua/init.lua'
   fi
 
 # Compilation flags
@@ -136,4 +136,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export XDG_CONFIG_HOME=$HOME/dotFiles
 
-./.zsh_exports
+
+if [ -f $HOME/.zsh_exports ]
+then
+  . $HOME/.zsh_exports
+fi
+
