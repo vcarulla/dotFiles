@@ -1,0 +1,4 @@
+alias deleteBranchs="git branch --merged | egrep -v '(^\*|master)' | xargs git branch -d"
+alias kubectl=kubecolor
+alias vim="nvim -u $HOME/.config/nvim/init.lua"
+alias catl="bat --paging=never"
