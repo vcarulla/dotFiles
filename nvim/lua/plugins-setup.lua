@@ -50,9 +50,12 @@ return packer.startup(function(use)       -- add list of plugins to install
     "nvim-telescope/telescope.nvim", 
     branch = "0.1.x" })                   -- Fuzzy Finder para busquedas
 
-  use { "ellisonleao/gruvbox.nvim" }      -- Tema
+  use { 
+    "bluz71/vim-nightfly-colors", 
+    as = "nightfly" 
+  }                                       -- Tema
 
-  use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+  use("tpope/vim-surround")               -- add, delete, change surroundings (it's awesome)
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 
