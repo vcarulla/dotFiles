@@ -104,3 +104,4 @@ zsdoc/data
 .zsh/.zsh_sessions/
 
 nvim/plugin/packer_compiled.lua
+$HOME/.nvim/undodir/*
