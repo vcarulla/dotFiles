@@ -30,7 +30,6 @@ return packer.startup(function(use)       -- add list of plugins to install
 
   use("wbthomason/packer.nvim")           -- El propio packer
   use("nvim-lua/plenary.nvim")            -- Funciones utilizadas por varios plugins
-  use("nvim-tree/nvim-tree.lua")          -- Arbol de directorios
   use("nvim-tree/nvim-web-devicons")      -- Iconos tipo VSCode  
 
   use ({
@@ -41,23 +40,26 @@ return packer.startup(function(use)       -- add list of plugins to install
     }
   })
 
-  use({ 
-    "nvim-telescope/telescope-fzf-native.nvim", -- Dependencia de fzf para un mejor redimiento
-    run = "make" 
+  use({
+    "nvim-telescope/telescope.nvim",      -- Fuzzy Finder para busquedas
+    tag = "0.1.2",
+    requires = { {'nvim-lua/plenary.nvim'} }
+    }
+  )
+
+  use ({ 
+    "bluz71/vim-nightfly-colors",           -- Tema de colores
+    as = "nightfly" 
   })
 
-  use({
-    "nvim-telescope/telescope.nvim", 
-    branch = "0.1.x" })                   -- Fuzzy Finder para busquedas
+  use (
+    'nvim-treesitter/nvim-treesitter',      -- Code Highlighter dinamico
+    { run = ':TSUpdate' } 
+  )
 
-  use { 
-    "bluz71/vim-nightfly-colors", 
-    as = "nightfly" 
-  }                                       -- Tema
-
-  use("tpope/vim-surround")               -- add, delete, change surroundings (it's awesome)
-  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-
+  use('theprimeagen/harpoon')
+  
+  use("mbbill/undotree")
 
   if packer_bootstrap then
     require("packer").sync()
