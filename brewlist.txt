@@ -1,104 +1,62 @@
-ansible
-azure-cli
-bat
-bats-core
-bdw-gc
-berkeley-db
-c-ares
+Wed Feb 14 23:18:11 -03 2024
+ansible     # ansible
+autoconf
+bat         # cat with syntax highlighting
 ca-certificates
-coreutils
-fzf
+circumflex  # hacker news on terminal
+dialog      # whiptail en macOs. Menues for bash
+eza         # modern "ls". exa are replace for eza
+fd          # modern "find"
+fzf         # fuzzy finder
 gdbm
 gettext
-glen
-gmp
-gnutls
-guile
-icu4c
-jemalloc
-jq
-kubecolor
-kubernetes-cli
-kustomize
-libarchive
-libb2
-libev
-libevent
-libffi
-libgcrypt
-libgpg-error
-libidn2
-libnghttp2
-libtasn1
+jq          # json processor
+lazydocker  # cli monitor for docker
+libgit2
+libssh2
 libtermkey
-libtool
-libunistring
 libuv
 libvterm
-libxml2
-libxmlsec1
-libyaml
-lnav
-lua
+libzip
 luajit
-luajit-openresty
 luv
 lz4
 m4
-macos-term-size
-minikube
-mongocli
-mongodb-community-shell
-mongodb-database-tools
-mongosh
+maccy         #OpenSource Clipboard manager
 mpdecimal
 msgpack
-mtr
-mysql-client
-ncurses
-neovim
-nettle
-nghttp2
-node@14
-oath-toolkit
+neovim        # the vim
 oniguruma
-openjdk
 openssl@1.1
-p11-kit
-pcre
-perl
+openssl@3
+pcre2
 pkg-config
+plz-cli       # gpt-3 copilot
+powerlevel10k # status bar zsh
+pwgen         # password generator
+pyenv         # python enviroment manager
 python@3.10
-python@3.8
+python@3.11
 python@3.9
-readline
-redis
-ruby
-six
-slackcat
-speedtest
+qownnotes     # Markdown notes editor
+readline      # 
+ripgrep       # recursive search via grep
+starship      # customizable cross prompt
 sqlite
 tcl-tk
-telnet
-terraform
-terragrunt
-tfswitch
-tmux
-tree-sitter
-ttyrec
-unbound
+tetris
+tldr          # man pages
+tree-sitter   # languaje parser
 unibilium
-utf8proc
-vault
-vim
-wget
 xz
-zsh-syntax-highlighting
+zlib
+zsh-completions
 zstd
-apache-directory-studio
-background-music
-chef-workstation
-google-cloud-sdk
-mounty
-osxfuse
-virtualbox
+--
+via CASK
+====
+iterm2              # the terminal via CASK
+MonitorControl      # external monitor brightness control via CASK
+flameshot           # screen capture via CASK
+font-victor-mono    # good name font via CASK
+raycast             # task manager via CASK

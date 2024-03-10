@@ -1,7 +1,7 @@
 local opt = vim.opt                   -- Para consistencia
 
 syntax = on                           -- Habilitar coloreo de sintaxís
-filetype = off                         -- Suele ser 'Plugin on' pero se desactiva para que los plugins carguen correctamente
+filetype = off                        -- Suele ser 'Plugin on' pero se desactiva para que los plugins carguen correctamente
 
 opt.autoindent = true                 -- Indenta de manera automatica
 -- opt.autowrite = true                  -- Guarda el archivo automaticamente al cambiar de buffer
@@ -37,7 +37,7 @@ opt.ruler = true                      -- Mostrar posición del cursor en barra i
 opt.scrolloff = 8                     -- Cantidad de líneas mínimas sobre y debajo del cursor para realizar el scroll
 opt.secure = true                     -- Evita ejecución de codigo .vimrc y .exrc en directorio actual.
 opt.shiftwidth = 2                    -- No se que es
--- opt.shortmess = "filnxtToOFc"          -- Ocultar mensajes de inicio
+opt.shortmess = "filnxtToOFc"          -- Ocultar mensajes de inicio
 opt.showcmd = true                    -- Mostrar comandos ejecutados
 opt.showmatch = true                  -- Resaltar pareja de signos de apertura/cierre de código
 opt.showmode = false                  -- Ocultar modo activado
@@ -58,7 +58,7 @@ opt.textwidth = 79                    -- Define el ancho de texto máximo
 opt.ttyfast = true                    -- Acelera el scroll (o eso dicen)
 opt.undodir = "/tmp/.nvim/undodir"    -- Directorio 'cache' de modificaciones de archivo. Dejar permisos 700 por seguridad
 opt.undofile = true                   -- Habilita la restauración de modificaciones de archivo
--- opt.updatetime = 50                   -- Tiempo de actualización de la pantalla
+-- opt.updatetime = 50                   -- Tiempo de actualización del guardado del buffer
 opt.visualbell = true                 -- Parpadeo de cursor en vez de sonido
 opt.wildmenu = true                   -- Muestra todas las coincidencias cuando se presiona tab
-opt.wrap = false                      -- Ajuste de texto al ancho máximo
+opt.wrap = true                      -- Ajuste de texto al ancho máximo

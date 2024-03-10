@@ -1,4 +1,8 @@
 alias deleteBranchs="git branch --merged | egrep -v '(^\*|master)' | xargs git branch -d"
-alias kubectl=kubecolor
-alias vim="nvim -u $HOME/.config/nvim/init.lua"
-alias catl="bat --paging=never"
+alias k=kubecolor
+alias vim="nvim -u $HOME/dotFiles/nvim/init.lua"
+alias bat="bat --paging=never"
+alias ls="eza -la --classify=always --icons=always"
+alias tree="eza --tree --level=2 --long --icons --git"
+alias pronostico="curl -4 http://wttr.in/Buenos_Aires\?1q\&lang=es"
+alias whiptai=dialog
